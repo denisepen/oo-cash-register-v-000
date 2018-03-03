@@ -1,5 +1,5 @@
 
-class cash_register_spec
+class CashRegister
 
   def initialize
     @total = 0
