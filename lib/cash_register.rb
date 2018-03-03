@@ -25,7 +25,7 @@ class CashRegister
       new_value = @discount / 100
     @discount = (@total * new_value)
     @total = @total - @discount
-    @total
+    # @total
     puts "After the discount, the total comes to #{@total}."
 
       else
