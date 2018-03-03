@@ -24,12 +24,8 @@ class CashRegister
       @discount = discount
       @total -= @discount
       puts "After the discount, the total comes to #{@total}."
-      @total - @discount
     else
-    @total-= (@discount/100)
-
-
-puts "There is no discount to apply."
+      puts "There is no discount to apply."
       end
   end
 end
