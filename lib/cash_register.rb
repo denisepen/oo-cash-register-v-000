@@ -18,7 +18,7 @@ class CashRegister
   end
 
   def apply_discount(discount)
-    if discount != 0
+    if discount
       @total = @total - discount
     puts "After the discount, the total comes to #{@total}."
       else
