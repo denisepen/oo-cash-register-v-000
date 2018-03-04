@@ -32,8 +32,8 @@ class CashRegister
       end
   end
 
-  def items(title, price, quantity = 0)
-    self.add_item
+  def items
+    self.add_item(title, price, quantity = 0)
     @@all << title
   end
 end
