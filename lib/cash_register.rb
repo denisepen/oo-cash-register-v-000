@@ -41,3 +41,4 @@ class CashRegister
     @@all << title
   end
 end
+end
