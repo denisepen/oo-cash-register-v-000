@@ -21,7 +21,7 @@ class CashRegister
     @total
   end
 
-  def apply_discount(discount)
+  def apply_discount
     self.add_item(title, price, quantity = 0)
     if !@discount == 0
       @discount = discount
