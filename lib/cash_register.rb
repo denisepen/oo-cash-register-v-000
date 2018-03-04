@@ -22,18 +22,14 @@ class CashRegister
   end
 
   def apply_discount
-    self.add_item
-    #  !@discount == 0
-    if CashRegister(discount)
-      price = price - @discount
-      @total += price
-      @total
-
-      @total = @total - @discount
-      puts "After the discount, the total comes to #{@total}."
-    else
-      puts "There is no discount to apply."
-      end
+  
+  @discount = discount
+  
+  if @discount == 0
+    puts "There is no discount to apply."
+  else
+    @total = @total - @discount
+    puts "After the discount, the total comes to #{@total}."
   end
 
   def items
