@@ -20,7 +20,7 @@ class CashRegister
   end
 
   def apply_discount
-    self.add_item
+    self.add_item(title, price, quantity = 0)
     if !@discount == 0
       # @discount = discount
       @total *= (1-@discount/100)*100
