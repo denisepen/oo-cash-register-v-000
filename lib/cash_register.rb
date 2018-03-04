@@ -35,9 +35,8 @@ class CashRegister
   end
 end
 
-  # def items
-  #   self.add_item(title, price, quantity = 1)
-  #   @@all << title
-  # end
+def void_last_transaction
+
+end
 
 end
