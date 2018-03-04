@@ -23,7 +23,8 @@ class CashRegister
 
   def apply_discount
     # add_item
-    if !@discount == 0
+    # if !@discount == 0
+    if CashRegister(discount)
       self.price = self.price - self.discount
       @total += self.price
       @total
