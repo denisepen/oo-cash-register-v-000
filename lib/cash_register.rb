@@ -25,7 +25,7 @@ class CashRegister
     self.add_item
     if !@discount == 0
     if CashRegister(discount)
-      self.price = self.price - self.discount
+      price = price - @discount
       @total += self.price
       @total
 
