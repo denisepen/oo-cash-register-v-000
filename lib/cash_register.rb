@@ -22,13 +22,12 @@ class CashRegister
   end
 
   def apply_discount
-
-  @discount = discount
-
+    @discount = discount
   if @discount == 0
     puts "There is no discount to apply."
   else
-    @total = @total - @discount
+       @price = @price - @discount
+    @total = @total + @price
     puts "After the discount, the total comes to #{@total}."
   end
 end
