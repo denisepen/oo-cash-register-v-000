@@ -32,7 +32,7 @@ class CashRegister
       end
   end
 
-  def items
+  def items(title, price, quantity = 0)
     self.add_item
     @@all << title
   end
