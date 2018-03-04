@@ -20,10 +20,10 @@ class CashRegister
   end
 
   def apply_discount
+    self.add_item
     if !@discount == 0
-      self.add_item
-      @discount = discount
-      @total -= (1-@discount/100)*100
+      # @discount = discount
+      @total *= (1-@discount/100)*100
       puts "After the discount, the total comes to #{@total}."
     else
       puts "There is no discount to apply."
