@@ -14,7 +14,7 @@ class CashRegister
       total_price = @quantity * @price
       @total += total_price
     else
-      @total = @total += price
+      @total = @total += @price
       end
     @total
   end
