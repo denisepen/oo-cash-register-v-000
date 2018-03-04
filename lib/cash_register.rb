@@ -23,7 +23,7 @@ class CashRegister
     if !@discount == 0
       self.add_item
       @discount = discount
-      @total -= @discount
+      @total -= (1-@discount/100)*100
       puts "After the discount, the total comes to #{@total}."
     else
       puts "There is no discount to apply."
